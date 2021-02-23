@@ -1,0 +1,7 @@
+1614103030: mosquitto version 2.0.7 starting
+1614103030: Config loaded from /mosquitto/config/mosquitto.conf.
+1614103030: Opening ipv4 listen socket on port 1883.
+1614103030: Opening ipv6 listen socket on port 1883.
+1614103030: mosquitto version 2.0.7 running
+1614103056: New connection from 172.22.0.1:58170 on port 1883.
+1614103057: New client connected from 172.22.0.1:58170 as MQTT_FX_Client (p2, c1, k60).
