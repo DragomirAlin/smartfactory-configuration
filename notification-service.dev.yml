@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: notification-service
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuerUri: http://192.168.1.4:8083/auth/realms/smartfactory
+          jwkSetUri: http://192.168.1.4:8083/auth/realms/smartfactory/protocol/openid-connect/certs
+  data:
+    mongodb:
+      database: smartfactory-notification
+      host: mongo
+      port: 27017
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: admin
+    password: admin
+server:
+  port: 8004
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://discUser:discPassword@discovery:8761/eureka
+mqtt:
+  publisher-id: spring-server
+  server: tcp://mosquitto:1883
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+
