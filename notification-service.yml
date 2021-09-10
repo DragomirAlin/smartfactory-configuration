@@ -31,9 +31,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://discUser:discPassword@discovery:8761/eureka
-mqtt:
-  publisher-id: spring-server
-  server: tcp://mosquitto:1883
 management:
   endpoints:
     web:
